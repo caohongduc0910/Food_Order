@@ -2,7 +2,7 @@
 
 <div class="content">
   <div class="wrapper">
-    <h1>Order</h1>
+    <h1>Đơn hàng</h1>
     <br>
 
     <?php
@@ -20,17 +20,17 @@
     <table class="table table-hover">
       <thead class="table-dark">
         <tr>
-          <th>S.N.</th>
-          <th>Food</th>
-          <th>Price</th>
-          <th>Quantity</th>
-          <th>Total</th>
-          <th>Status</th>
-          <th>Name</th>
-          <th>Contact</th>
-          <th>Email</th>
-          <th>Address</th>
-          <th>Actions</th>
+          <th>STT</th>
+          <th>Tên</th>
+          <th>Giá</th>
+          <th>Số lượng</th>
+          <th>Tổng</th>
+          <th>Trạng thái</th>
+          <th>Tên</th>
+          <th>Liên lạc</th>
+          <th>SĐT</th>
+          <th>Địa chỉ</th>
+          <th>Hành động</th>
         </tr>
       </thead>
       <?php
@@ -66,9 +66,9 @@
               <td><?php echo $customeraddress ?></td>
               <td>
                 <a href="<?php echo SITEURL; ?>admin/updateOrder.php?id=<?php echo $id; ?>"
-                  class="btn btn-primary">Update</a>
+                  class="btn btn-primary">Cập nhật</a>
                 <a href="<?php echo SITEURL; ?>admin/deleteOrder.php?id=<?php echo $id; ?>"
-                  class="btn btn-danger">Delete</a>
+                  class="btn btn-danger">Xóa</a>
               </td>
             </tr>
             <?php

@@ -26,18 +26,18 @@
     }
     ?>
 
-    <a class="btn btn-success" href="addCategory.php">Add Category</a>
+    <a class="btn btn-success" href="addCategory.php">Thêm danh mục</a>
     <br>
     <br>
     <table class="table table-hover">
       <thead class="table-dark">
         <tr>
-          <th>S.N.</th>
-          <th>Title</th>
-          <th>Image</th>
-          <th>Featured</th>
-          <th>Category</th>
-          <th>Actions</th>
+          <th>STT</th>
+          <th>Tên</th>
+          <th>Ảnh</th>
+          <th>Nổi bật</th>
+          <th>Danh mục</th>
+          <th>Hành động</th>
         </tr>
       </thead>
       <tbody class="table-group-divider">
@@ -66,9 +66,9 @@
                 <td><?php echo $status ?></td>
                 <td>
                   <a href="<?php echo SITEURL; ?>admin/updateCategory.php?id=<?php echo $id; ?>"
-                    class="btn btn-primary">Update</a>
+                    class="btn btn-primary">Cập nhật</a>
                   <a href="<?php echo SITEURL; ?>admin/deleteCategory.php?id=<?php echo $id; ?>&img_name=<?php echo $img_name; ?>"
-                    class="btn btn-danger">Delete</a>
+                    class="btn btn-danger">Xóa</a>
                 </td>
               </tr>
               <?php

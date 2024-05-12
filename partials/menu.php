@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <!-- Important to make website responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurant Website</title>
+    <title>Quán ăn ngon</title>
 
     <!-- Link our CSS file -->
     <link rel="stylesheet" href="css/style.css">
@@ -25,16 +25,16 @@
             <div class="menu text-right">
                 <ul>
                     <li>
-                        <a href="index.php">Home</a>
+                        <a href="index.php">Trang chính</a>
                     </li>
                     <li>
-                        <a href="categories.php">Categories</a>
+                        <a href="categories.php">Danh mục</a>
                     </li>
                     <li>
-                        <a href="foods.php">Foods</a>
+                        <a href="foods.php">Đồ ăn</a>
                     </li>
                     <li>
-                        <a href="#">Contact</a>
+                        <a href="#">Liên hệ</a>
                     </li>
                 </ul>
             </div>

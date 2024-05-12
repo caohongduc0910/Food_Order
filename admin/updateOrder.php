@@ -2,7 +2,7 @@
 
 <div class="content">
   <div class="wrapper">
-    <h1>Update Order</h1>
+    <h1>Cập nhật đơn hàng</h1>
 
     <?php
     $id = $_GET['id'];
@@ -73,67 +73,67 @@
 
     <form action="" method="POST">
       <div class="mb-3">
-        <label class="form-label"><b>Food</b></label>
+        <label class="form-label"><b>Tên đồ ăn</b></label>
         <input type="text" class="form-control" id="FormControlInput1" name="food" value="<?php echo $food; ?>"
           readonly>
       </div>
 
       <div class="mb-3">
-        <label class="form-label"><b>Price</b></label>
+        <label class="form-label"><b>Giá</b></label>
         <input type="text" class="form-control" id="FormControlInput1" name="price" value="<?php echo $price; ?>"
           readonly>
       </div>
 
       <div class="mb-3">
-        <label for="FormControlInput2" class="form-label"><b>Quantity</b></label>
+        <label for="FormControlInput2" class="form-label"><b>Số lượng</b></label>
         <input type="number" class="form-control" id="FormControlInput2" name="qty" value="<?php echo $quantity; ?>">
       </div>
 
       <div class="mb-3">
-        <label for="FormControlInput2" class="form-label"><b>Status</b></label>
+        <label for="FormControlInput2" class="form-label"><b>Trạng thái</b></label>
         <select class="form-select" name="status">
           <option value="Ordered" <?php if ($status == "Ordered") {
             echo 'selected';
-          } ?>>Ordered</option>
+          } ?>>Đã đặt</option>
           <option value="On Delivery" <?php if ($status == "On Delivery") {
             echo 'On Delivery';
-          } ?>>On Delivery</option>
+          } ?>>Đang vận chuyển</option>
           <option value="Delivered" <?php if ($status == "Delivered") {
             echo 'Delivered';
-          } ?>>Delivered</option>
+          } ?>>Thành công</option>
           <option value="Cancelled" <?php if ($status == "Cancelled") {
             echo 'Cancelled';
-          } ?>>Cancelled</option>
+          } ?>>Đã hủy</option>
         </select>
       </div>
 
       <div class="mb-3">
-        <label for="FormControlInput3" class="form-label"><b>Customer Name</b></label>
+        <label for="FormControlInput3" class="form-label"><b>Tên khách</b></label>
         <input type="text" class="form-control" id="FormControlInput3" name="customer_name"
           value="<?php echo $customer_name; ?>">
       </div>
 
       <div class="mb-3">
-        <label for="FormControlInput4" class="form-label"><b>Customer Contact</b></label>
+        <label for="FormControlInput4" class="form-label"><b>Liên hệ</b></label>
         <input type="text" class="form-control" id="FormControlInput4" name="customer_contact"
           value="<?php echo $customer_contact; ?>">
       </div>
 
       <div class="mb-3">
-        <label for="FormControlInput5" class="form-label"><b>Customer Email</b></label>
+        <label for="FormControlInput5" class="form-label"><b>Email</b></label>
         <input type="text" class="form-control" id="FormControlInput5" name="customer_email"
           value="<?php echo $customer_email; ?>">
       </div>
 
       <div class="mb-3">
-        <label for="FormControlInput3" class="form-label"><b>Customer Address</b></label>
+        <label for="FormControlInput3" class="form-label"><b>Địa chỉ</b></label>
         <input type="text" class="form-control" id="FormControlInput3" name="customer_address"
           value="<?php echo $customer_address; ?>">
       </div>
 
 
       <div class="mt-2">
-        <button type="submit" name="submit" class="btn btn-primary"> Update </button>
+        <button type="submit" name="submit" class="btn btn-primary"> Cập nhật </button>
       </div>
     </form>
   </div>

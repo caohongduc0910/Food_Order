@@ -2,7 +2,7 @@
 
 <div class="content">
   <div class="wrapper">
-    <h1>Update Admin</h1>
+    <h1>Cập nhật quản trị viên</h1>
 
     <?php
       $id = $_GET['id'];
@@ -31,17 +31,17 @@
 
     <form action="" method="POST">
       <div class="mb-3">
-        <label for="FormControlInput1" class="form-label">Fullname</label>
+        <label for="FormControlInput1" class="form-label">Họ tên</label>
         <input type="text" class="form-control" id="FormControlInput1" value = "<?php echo $fullName; ?>" name="fullname">
       </div>
 
       <div class="mb-3">
-        <label for="FormControlInput2" class="form-label">Username</label>
+        <label for="FormControlInput2" class="form-label">Tên đăng nhập</label>
         <input type="text" class="form-control" id="FormControlInput2" value = "<?php echo $userName; ?>" name="username">
       </div>
 
       <div class="mb-3">
-        <button type="submit" name="submit" class="btn btn-primary">Update</button>
+        <button type="submit" name="submit" class="btn btn-primary">Cập nhật</button>
       </div>
     </form>
   </div>
@@ -60,7 +60,7 @@
       WHERE id = '$id'
       ";
 
-    $res = mysqli_query($conn, $sql) or die(mysqli_error());
+    $res = mysqli_query($conn, $sql);
 
     if($res==true) {
       // display msg with session 

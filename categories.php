@@ -1,9 +1,22 @@
 <?php include ('./partials/menu.php') ?>
 
+<!-- fOOD sEARCH Section Starts Here -->
+<section class="food-search text-center">
+    <div class="container">
+
+    <form action="<?php echo SITEURL; ?>food-search.php" method="POST">
+            <input type="search" name="search" placeholder="Tìm kiếm.." required>
+            <input type="submit" name="submit" value="Tìm kiếm" class="btn btn-primary">
+        </form>
+
+    </div>
+</section>
+<!-- fOOD sEARCH Section Ends Here -->
+
 <!-- CAtegories Section Starts Here -->
 <section class="categories">
     <div class="container">
-        <h2 class="text-center">Explore Foods</h2>
+        <h2 class="text-center">Khám phá</h2>
 
         <?php
 

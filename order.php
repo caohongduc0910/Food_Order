@@ -32,22 +32,22 @@ if (isset($_GET['food_id'])) {
 <section class="food-search">
     <div class="container">
 
-        <h2 class="text-center text-white">Fill this form to confirm your order.</h2>
+        <h2 class="text-center text-white">Điềm vào đây để hoàn tất đặt hàng</h2>
 
         <form action="" method = "POST" class="order">
             <fieldset>
-                <legend>Selected Food</legend>
+                <legend class="text-white">Món đã chọn</legend>
 
                 <div class="food-menu-img">
-                    <img src="<?php echo SITEURL; ?>images/food/<?php echo $img_name; ?>" alt="Chicke Hawain Pizza"
+                    <img src="<?php echo SITEURL; ?>images/food/<?php echo $img_name; ?>" alt=""
                         class="img-responsive img-curve">
                 </div>
 
                 <div class="food-menu-desc">
-                    <h3><?php echo $title; ?></h3>
-                    <p class="food-price"><?php echo $price; ?>đ</p>
+                    <h3 class="text-white"><?php echo $title; ?></h3>
+                    <p class="food-price text-white"><?php echo $price; ?>đ</p>
 
-                    <div class="order-label">Quantity</div>
+                    <div class="order-label text-white">Số lượng</div>
                     <input type="number" name="qty" class="input-responsive" value="1" required>
 
                 </div>
@@ -55,21 +55,21 @@ if (isset($_GET['food_id'])) {
             </fieldset>
 
             <fieldset>
-                <legend>Delivery Details</legend>
-                <div class="order-label">Full Name</div>
+                <legend class="text-white">Thông tin</legend>
+                <div class="order-label text-white">Họ tên</div>
                 <input type="text" name="full-name" placeholder="E.g. Cao Duc" class="input-responsive" required>
 
-                <div class="order-label">Phone Number</div>
-                <input type="tel" name="contact" placeholder="E.g. 9843xxxxxx" class="input-responsive" required>
+                <div class="order-label text-white">Số điện thoại</div>
+                <input type="tel" name="contact" placeholder="E.g. 093xxxxxx" class="input-responsive" required>
 
-                <div class="order-label">Email</div>
+                <div class="order-label text-white">Email</div>
                 <input type="email" name="email" placeholder="E.g. duccao@gmail.com" class="input-responsive" required>
 
-                <div class="order-label">Address</div>
-                <textarea name="address" rows="10" placeholder="E.g. Street, City, Country" class="input-responsive"
+                <div class="order-label text-white">Địa chỉ</div>
+                <textarea name="address" rows="10" placeholder="E.g. Số nhà, Đường, Quận" class="input-responsive"
                     required></textarea>
 
-                <input type="submit" name="submit" value="Confirm Order" class="btn btn-primary">
+                <input type="submit" name="submit" value="Xác nhận" class="btn btn-primary">
             </fieldset>
 
         </form>

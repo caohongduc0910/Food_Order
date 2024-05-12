@@ -2,7 +2,7 @@
 
 <div class="content">
   <div class="wrapper">
-    <h1>Dashboard</h1>
+    <h1>Trang chủ</h1>
     <?php
     if (isset($_SESSION['login'])) {
       echo $_SESSION['login'];
@@ -16,7 +16,7 @@
       $count = mysqli_num_rows($res);
       ?>
       <h1> <?php echo $count ?></h1>
-      Categories
+      Danh mục
     </div>
     <div class="col-4 text-center">
       <?php
@@ -25,7 +25,7 @@
       $count = mysqli_num_rows($res);
       ?>
       <h1><?php echo $count ?></h1>
-      Foods
+      Đồ ăn
     </div>
     <div class="col-4 text-center">
       <?php
@@ -34,7 +34,7 @@
       $count = mysqli_num_rows($res);
       ?>
       <h1><?php echo $count ?></h1>
-      Total Orders
+      Tổng đơn hàng
     </div>
     <div class="col-4 text-center">
       <?php
@@ -44,7 +44,7 @@
       $revenue = $row['Total']
       ?>
       <h1><?php echo $revenue ?>đ</h1>
-      Revenue
+      Doanh thu
     </div>
 
     <div class="clearfix"></div>

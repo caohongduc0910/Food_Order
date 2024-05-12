@@ -62,7 +62,7 @@
         <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
           <form action="" method="POST">
             <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
-              <p class="lead fw-normal mb-0 me-3">Sign in with</p>
+              <p class="lead fw-normal mb-0 me-3">Đăng nhập bằng</p>
               <button type="button" class="btn btn-primary btn-floating mx-1">
                 <i class="fab fa-facebook-f"></i>
               </button>
@@ -77,19 +77,19 @@
             </div>
 
             <div class="divider d-flex align-items-center my-4">
-              <p class="text-center fw-bold mx-3 mb-0">Or</p>
+              <p class="text-center fw-bold mx-3 mb-0">Hoặc</p>
             </div>
 
             <!-- Username input -->
             <div class="form-floating mb-3">
               <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" name="username">
-              <label for="floatingInput">Username</label>
+              <label for="floatingInput">Tên đăng nhập</label>
             </div>
             
             <!-- Password input -->
             <div class="form-floating mb-3">
               <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="password">
-              <label for="floatingPassword">Password</label>
+              <label for="floatingPassword">Mật khẩu</label>
             </div>
 
             <div class="d-flex justify-content-between align-items-center">
@@ -97,16 +97,16 @@
               <div class="form-check mb-0">
                 <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3" />
                 <label class="form-check-label" for="form2Example3">
-                  Remember me
+                  Nhớ tài khoản
                 </label>
               </div>
-              <a href="" class="text-body link-primary">Forgot password?</a>
+              <a href="" class="text-body link-primary">Quên mật khẩu?</a>
             </div>
 
 
             <div class="text-center text-lg-start mt-4 pt-2">
               <button type="submit" name="submit" class="btn btn-primary btn-lg"
-                style="padding-left: 2.5rem; padding-right: 2.5rem;">Login</button>
+                style="padding-left: 2.5rem; padding-right: 2.5rem;">Đăng nhập</button>
               </p>
             </div>
           </form>

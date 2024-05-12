@@ -2,7 +2,7 @@
 
 <div class="content">
   <div class="wrapper">
-    <h1>Update Food</h1>
+    <h1>Cập nhật đồ ăn</h1>
 
     <?php
     $id = $_GET['id'];
@@ -51,7 +51,7 @@
 
           if ($upload == false) {
             $_SESSION['update'] = "<div class='alert alert-danger'>Fail to upload</div>";
-            // header("location:" . SITEURL . "admin/addFood.php");
+            header("location:" . SITEURL . "admin/addFood.php");
             die();
           }
           $path = "../images/food/".$img_name;
@@ -59,7 +59,7 @@
 
           if($remove == false) {
             $_SESSION['remove'] =  "<div class='alert alert-danger'>Fail to remove</div>";
-            // header("location:".SITEURL."admin/food.php");
+            header("location:".SITEURL."admin/food.php");
             die();
           }
         }
@@ -86,43 +86,43 @@
 
       if ($res == true) { 
         $_SESSION['update'] = "<div class='alert alert-success'>Food updated successfully</div>";
-        // header("location:" . SITEURL . "admin/food.php");
+        header("location:" . SITEURL . "admin/food.php");
       } else {  
         $_SESSION['update'] = "<div class='alert alert-danger'>Food updated unsuccessfully</div>";
-        // header("location:" . SITEURL . "admin/food.php");
+        header("location:" . SITEURL . "admin/food.php");
       }
     }
     ?>
 
     <form action="" method="POST">
       <div class="mb-3">
-        <label for="FormControlInput1" class="form-label">Title</label>
+        <label for="FormControlInput1" class="form-label">Tên</label>
         <input type="text" class="form-control" id="FormControlInput1" name="title" value="<?php echo $title; ?>">
       </div>
 
       <div class="mb-3">
-        <label for="FormControlInput2" class="form-label">Description</label>
+        <label for="FormControlInput2" class="form-label">Mô tả</label>
         <textarea class="form-control" id="FormControlInput2" placeholder="Description of the food" name="description"><?php echo $description; ?>
         </textarea>
       </div>
 
       <div class="mb-3">
-        <label for="FormControlInput3" class="form-label">Price</label>
+        <label for="FormControlInput3" class="form-label">Giá</label>
         <input type="number" class="form-control" id="FormControlInput3" placeholder="Enter price" name="price" 
         value="<?php echo $price; ?>">
       </div>
 
       <div class="mb-4 mt-4">
-        Current image: <img src="<?php echo SITEURL; ?>images/category/<?php echo $current_image; ?>" width="100px">
+        Ảnh hiện tại: <img src="<?php echo SITEURL; ?>images/food/<?php echo $current_image; ?>" width="100px">
       </div>
 
       <div class="mb-3">
-        <label for="FormControlInput2" class="form-label">New Image</label>
+        <label for="FormControlInput2" class="form-label">Ảnh mới</label>
         <input type="file" class="form-control" id="FormControlInput2" name="img" accept="image/*">
       </div>
 
       <div class="mb-3">
-        <label class="form-label">Category</label>
+        <label class="form-label">Danh mục</label>
         <select class="form-select" name="category">
 
           <?php
@@ -143,7 +143,7 @@
             }
           } else {
             ?>
-            <option value="0">No category found</option>
+            <option value="0">Không có danh mục nào</option>
             <?php
           }
           ?>
@@ -152,40 +152,40 @@
 
       <div class="row">
         <div class="col-6">
-          <div class="mb-2">Featured</div>
+          <div class="mb-2">Nổi bật</div>
           <div class="container">
             <div class="form-check">
               <input class="form-check-input" type="radio" name="featured" id="flexRadioDefault1" value="yes"
               <?php if($featured=="yes"){echo 'checked';}?>>
               <label class="form-check-label" for="flexRadioDefault1">
-                Yes
+                Có
               </label>
             </div>
             <div class="form-check">
               <input class="form-check-input" type="radio" name="featured" id="flexRadioDefault2" value="no"
               <?php if($featured=="no"){echo 'checked';}?>>
               <label class="form-check-label" for="flexRadioDefault2">
-                No
+                Không
               </label>
             </div>
           </div>
         </div>
 
         <div class="col-6">
-          <div class="mb-2">Status</div>
+          <div class="mb-2">Trạng thái</div>
           <div class="container">
             <div class="form-check">
               <input class="form-check-input" type="radio" name="status" id="flexRadioDefault3" value="active"
               <?php if($status=="active"){echo 'checked';}?>>
               <label class="form-check-label" for="flexRadioDefault3">
-                Active
+                Hoạt động
               </label>
             </div>
             <div class="form-check">
               <input class="form-check-input" type="radio" name="status" id="flexRadioDefault4" value="inactive"
               <?php if($status=="inactive"){echo 'checked';}?>>
               <label class="form-check-label" for="flexRadioDefault4">
-                Inactive
+                Không hoạt động
               </label>
             </div>
           </div>
@@ -193,7 +193,7 @@
       </div>
 
       <div class="mt-2">
-        <button type="submit" name="submit" class="btn btn-primary"> Update </button>
+        <button type="submit" name="submit" class="btn btn-primary"> Cập nhật </button>
       </div>
     </form>
   </div>

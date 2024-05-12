@@ -36,16 +36,16 @@
     }
     ?>
 
-    <a class="btn btn-success" href="addAdmin.php">Add Admin</a>
+    <a class="btn btn-success" href="addAdmin.php">Thêm quản trị viên</a>
     <br>
     <br>
     <table class="table table-hover">
       <thead class="table-dark">
         <tr>
-          <th>S.N.</th>
-          <th>Full name</th>
-          <th>User name</th>
-          <th>Actions</th>
+          <th>STT</th>
+          <th>Họ tên</th>
+          <th>Tên đăng nhập</th>
+          <th>Hành động</th>
         </tr>
       </thead>
       <tbody class="table-group-divider">
@@ -69,11 +69,11 @@
                 <td><?php echo $userName ?></td>
                 <td>
                   <a href="<?php echo SITEURL; ?>admin/updatePassword.php?id=<?php echo $id; ?>" 
-                  class="btn btn-warning">Change Password</a>
+                  class="btn btn-warning">Đổi mật khẩu</a>
                   <a href="<?php echo SITEURL; ?>admin/updateAdmin.php?id=<?php echo $id; ?>"
-                    class="btn btn-primary">Update</a>
+                    class="btn btn-primary">Cập nhật</a>
                   <a href="<?php echo SITEURL; ?>admin/deleteAdmin.php?id=<?php echo $id; ?>"
-                    class="btn btn-danger">Delete</a>
+                    class="btn btn-danger">Xóa</a>
                 </td>
               </tr>
 
@@ -86,7 +86,6 @@
         ?>
       </tbody>
     </table>
-    <!-- <div class="clearfix"></div> -->
   </div>
 </div>
 

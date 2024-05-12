@@ -5,8 +5,8 @@
     <div class="container">
 
         <form action="<?php echo SITEURL; ?>food-search.php" method="POST">
-            <input type="search" name="search" placeholder="Search for Food.." required>
-            <input type="submit" name="submit" value="Search" class="btn btn-primary">
+            <input type="search" name="search" placeholder="Tìm kiếm..." required>
+            <input type="submit" name="submit" value="Tìm kiếm" class="btn btn-primary">
         </form>
 
     </div>
@@ -23,7 +23,7 @@ if (isset($_SESSION['order'])) {
 <!-- CAtegories Section Starts Here -->
 <section class="categories">
     <div class="container">
-        <h2 class="text-center">Explore Foods</h2>
+        <h2 class="text-center">Khám phá</h2>
 
         <?php
         $sql = "SELECT * FROM category WHERE status = 'active' AND featured = 'yes' LIMIT 3";
@@ -60,7 +60,7 @@ if (isset($_SESSION['order'])) {
 <!-- fOOD MEnu Section Starts Here -->
 <section class="food-menu">
     <div class="container">
-        <h2 class="text-center">Food Menu</h2>
+        <h2 class="text-center">Đồ ăn</h2>
 
         <?php
 
@@ -108,7 +108,7 @@ if (isset($_SESSION['order'])) {
     </div>
 
     <p class="text-center">
-        <a href="#">See All Foods</a>
+        <a href="foods.php">Xem tất cả</a>
     </p>
 </section>
 <!-- fOOD Menu Section Ends Here -->

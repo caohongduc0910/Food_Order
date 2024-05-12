@@ -2,7 +2,7 @@
 
 <div class="content">
   <div class="wrapper">
-    <h1>Add Food</h1>
+    <h1>Thêm đồ ăn</h1>
     <br>
 
     <?php
@@ -57,28 +57,28 @@
 
     <form action="" method="POST" enctype="multipart/form-data">
       <div class="mb-3">
-        <label for="FormControlInput1" class="form-label">Title</label>
+        <label for="FormControlInput1" class="form-label">Tên</label>
         <input type="text" class="form-control" id="FormControlInput1" placeholder="Enter title" name="title">
       </div>
 
       <div class="mb-3">
-        <label for="FormControlInput2" class="form-label">Description</label>
+        <label for="FormControlInput2" class="form-label">Mô tả</label>
         <textarea class="form-control" id="FormControlInput2" placeholder="Description of the food"
           name="description"></textarea>
       </div>
 
       <div class="mb-3">
-        <label for="FormControlInput3" class="form-label">Price</label>
+        <label for="FormControlInput3" class="form-label">Giá</label>
         <input type="number" class="form-control" id="FormControlInput3" placeholder="Enter price" name="price">
       </div>
 
       <div class="mb-3">
-        <label for="FormControlInput3" class="form-label">Image</label>
+        <label for="FormControlInput3" class="form-label">Ảnh</label>
         <input type="file" class="form-control" id="FormControlInput3" name="img" accept="image/*">
       </div>
 
       <div class="mb-3">
-        <label class="form-label">Category</label>
+        <label class="form-label">Danh mục</label>
         <select class="form-select" name="category">
 
           <?php
@@ -99,7 +99,7 @@
             }
           } else {
             ?>
-            <option value="0">No category found</option>
+            <option value="0">Không có danh mục nào</option>
             <?php
           }
           ?>
@@ -108,36 +108,36 @@
 
       <div class="row">
         <div class="col-6">
-          <div class="mb-2">Featured</div>
+          <div class="mb-2">Nổi bật</div>
           <div class="container">
             <div class="form-check">
               <input class="form-check-input" type="radio" name="featured" id="flexRadioDefault1" value="yes" checked>
               <label class="form-check-label" for="flexRadioDefault1">
-                Yes
+                Có
               </label>
             </div>
             <div class="form-check">
               <input class="form-check-input" type="radio" name="featured" id="flexRadioDefault2" value="no">
               <label class="form-check-label" for="flexRadioDefault2">
-                No
+                Không
               </label>
             </div>
           </div>
         </div>
 
         <div class="col-6">
-          <div class="mb-2">Status</div>
+          <div class="mb-2">Trạng thái</div>
           <div class="container">
             <div class="form-check">
               <input class="form-check-input" type="radio" name="status" id="flexRadioDefault3" value="active" checked>
               <label class="form-check-label" for="flexRadioDefault3">
-                Active
+                Hoạt động
               </label>
             </div>
             <div class="form-check">
               <input class="form-check-input" type="radio" name="status" id="flexRadioDefault4" value="inactive">
               <label class="form-check-label" for="flexRadioDefault4">
-                Inactive
+                Không hoạt động
               </label>
             </div>
           </div>
@@ -145,7 +145,7 @@
       </div>
 
       <div class="mt-3">
-        <button type="submit" name="submit" class="btn btn-primary"> Create </button>
+        <button type="submit" name="submit" class="btn btn-primary"> Tạo </button>
       </div>
     </form>
   </div>
